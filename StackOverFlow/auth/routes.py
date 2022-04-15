@@ -108,7 +108,7 @@ def get_users():
 
 #all users endpoint
 @auth.route('/users')
-def me():
+def users():
 
   all_users =  get_users()
   return jsonify(all_users)
