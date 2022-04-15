@@ -44,7 +44,7 @@ def create_app(test_config=None):
     API_URL = '/static/swagger.yaml'
     swaggerui_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL,API_URL,
-    config={'app_name': "Fast Food First API"}
+    config={'app_name': "StackOverflow-lite"}
     )
     app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
    
