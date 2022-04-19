@@ -90,7 +90,7 @@ def new_questions():
 
 
  
-# #deleting a questions item from the database
+# #deleting a question
 @questions.route("/remove/<string:questionId>", methods=['DELETE'])
 @jwt_required()
 def delete_questions(questionId):
